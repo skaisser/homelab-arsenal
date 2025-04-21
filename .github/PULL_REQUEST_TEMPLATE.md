@@ -1,23 +1,39 @@
 ## Description
-<!-- Describe your changes in detail -->
+<!-- Describe your changes in detail. What problem does this solve? What value does it add? -->
 
 ## Related Issue
-<!-- Please link to the issue here if applicable -->
+<!-- Please link to the issue here if applicable. Format: Fixes #123 -->
 
 ## Type of Change
 <!-- Please delete options that are not relevant -->
-- [ ] Documentation Update
-- [ ] New Feature/Guide
-- [ ] Bug Fix
-- [ ] This change requires a documentation update
+- [ ] New Guide/Documentation
+- [ ] Documentation Update/Fix
+- [ ] Command/Procedure Update
+- [ ] Configuration Example
+- [ ] Best Practice/Tips
+- [ ] Other (please describe)
+
+## Category
+<!-- Please delete options that are not relevant -->
+- [ ] Basics & Getting Started
+- [ ] Virtualization & Containers
+- [ ] Storage & Files
+- [ ] Networking & Security
+- [ ] Monitoring & Maintenance
+- [ ] Applications & Services
+- [ ] Best Practices & Tips
 
 ## Checklist
-- [ ] My changes follow the style guidelines of this project
-- [ ] I have performed a self-review of my documentation
-- [ ] I have commented my code/documentation particularly in hard-to-understand areas
-- [ ] My changes generate no new warnings
-- [ ] I have checked my documentation for common typos and errors
-- [ ] I have tested the commands/procedures (if applicable)
+- [ ] I have followed the [guide template](../templates/guide-template.md) (if adding new guide)
+- [ ] I have included appropriate tags and categories
+- [ ] I have added/updated table of contents where applicable
+- [ ] I have tested all commands and procedures
+- [ ] I have checked for common typos and formatting issues
+- [ ] I have included relevant links and references
+- [ ] I have marked the difficulty level appropriately (beginner/intermediate/advanced)
+
+## Screenshots/Examples
+<!-- If applicable, add screenshots or code examples to help explain your changes -->
 
 ## Additional Notes
-<!-- Add any additional notes about the PR here -->
+<!-- Add any additional context about the changes here -->

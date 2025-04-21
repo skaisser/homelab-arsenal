@@ -1,11 +1,13 @@
 # 🏠 HomeLab Arsenal
-<p align="center"><a href="https://github.com/skaisser/homelab-arsenal" target="_blank"><img src="img/logo.png" width="400" alt="HomeLab Arsenal Logo"></a></p>
-<p align="center">Your Ultimate Guide to Building & Managing a Professional-Grade Home Lab</p>
+![HomeLab Arsenal Logo](img/logo.png)
+*Your Ultimate Guide to Building & Managing a Professional-Grade Home Lab*
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
-Welcome to HomeLab Arsenal! This is your comprehensive guide to building and managing a professional-grade home lab environment. Whether you're setting up your first home server or expanding your existing infrastructure, our guides cover everything from basic Linux administration to advanced homelab architectures.
+Welcome to HomeLab Arsenal – your ultimate companion for designing, deploying, and managing a rock-solid home lab infrastructure. Whether you’re a curious beginner or a seasoned sysadmin, this repository offers a structured, hands-on approach to building and maintaining your own self-hosted, secure, and automated digital ecosystem.
+
+From bare metal to containers, from Linux basics to advanced automation – everything you need to master your homelab is right here. ✨
 
 ### 🎯 What's Inside
 
@@ -161,6 +163,11 @@ This documentation is optimized for [Obsidian](https://obsidian.md), a powerful 
   - Cluster management
 
 ### 📶 Networking
+- [Network Guide](docs/networking/network-guide.md) - Complete network configuration `intermediate`
+  - VLAN setup
+  - DNS configuration
+  - VPN setup
+  - Proxy configuration
 
 ## 📖 Documentation Standards
 
@@ -215,49 +222,6 @@ Made with ❤️ by [skaisser](https://github.com/skaisser)
 
 ## 💡 Quick Tips
 
-### Navigation
-- Use the table of contents above to find specific topics
-- Each guide contains detailed examples and best practices
-- Look for emoji icons to quickly identify sections
-
-### Tags
-Common tags used across documentation:
-
-**Virtualization & Containers:**
-- #docker - Container management
-- #containers - Container operations
-- #virtualization - Virtual environments
-- #proxmox - Proxmox VE specific
-
-**Storage & Files:**
-- #storage - Storage management
-- #files - File operations
-- #filesystem - File system operations
-- #zfs - ZFS storage operations
-- #snapshots - Storage snapshots
-- #tar - Archive management
-
-**File Transfer:**
-- #rclone - Cloud storage sync
-- #rsync - Efficient file transfer
-- #scp - Secure copy
-
-**System & Services:**
-- #linux - Linux system operations
-- #permissions - File permissions
-- #services - Service management
-- #jobs - Job scheduling
-- #monitoring - System monitoring
-
-**Network:**
-- #network - Network operations
-- #networking - Network configuration
-- #performance - Performance testing
-- #iperf - Network speed testing
-- #troubleshooting - Issue resolution
-
-**Platforms:**
-- #truenas - TrueNAS Scale specific
 
 ### Best Practices
 - Always test commands in a safe environment first
