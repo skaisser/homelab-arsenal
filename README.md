@@ -62,10 +62,10 @@ This documentation is optimized for [Obsidian](https://obsidian.md), a powerful 
 
 ### 🚀 Getting Started
 - [Linux Basics](docs/basics/) - Essential Linux knowledge `beginner`
-  - Command line essentials
-  - File system operations
-  - Package management
-  - Basic administration
+  - [Command Reference](docs/basics/command-reference.md)
+  - [File Management](docs/basics/file-management.md)
+  - [File Transfer](docs/basics/file-transfer.md)
+  - [Getting Started](docs/basics/getting-started.md)
 - [Initial Setup](docs/setup/) - First steps in your homelab `beginner`
   - Hardware selection
   - Network planning
@@ -153,7 +153,7 @@ This documentation is optimized for [Obsidian](https://obsidian.md), a powerful 
   - Troubleshooting
 
 ### 🖥 Virtualization
-- [Proxmox Guide](docs/proxmox-guide.md) - Complete Proxmox VE administration `advanced`
+- [Proxmox Guide](docs/virtualization/proxmox-guide.md) - Complete Proxmox VE administration `advanced`
   - VM management
   - Container operations
   - Storage configuration

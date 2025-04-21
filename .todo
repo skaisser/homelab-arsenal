@@ -1,62 +1,83 @@
-# Linux4Noobs - Future Guides
+# HomeLab Arsenal - Missing Guides
 
-## 🌐 Network Management Guide
-- [ ] VLAN configuration and management
-- [ ] Network segmentation best practices
-- [ ] DNS setup (Pi-hole, Unbound)
-- [ ] Reverse proxy (Nginx, Traefik)
-- [ ] Load balancing configuration
-- [ ] VPN setup (WireGuard, OpenVPN)
-- [ ] Network monitoring tools
+## Infrastructure
 
-## 🤖 Automation Guide
-- [ ] Ansible playbooks for common tasks
-- [ ] Shell scripting examples
-- [ ] Cron job management
-- [ ] CI/CD pipeline setup
-- [ ] Infrastructure as Code (Terraform)
-- [ ] Configuration management
-- [ ] Task scheduling
+### 🖥 Virtualization
+- [ ] `virtualization/kvm-guide.md` - KVM/QEMU virtualization guide
+- [ ] `virtualization/vm-management.md` - VM administration best practices
 
-## 🎬 Media Server Guide
-- [ ] Plex/Jellyfin installation and setup
-- [ ] Media organization best practices
-- [ ] Hardware transcoding configuration
-- [ ] Sonarr/Radarr integration
-- [ ] Subtitle management
-- [ ] Storage optimization techniques
-- [ ] Media backup strategies
+### 🐳 Containers
+- [ ] `containers/kubernetes-guide.md` - K3s/K8s for homelab
+- [ ] `containers/lxc-guide.md` - System containers guide
 
-## 🏠 Home Assistant Guide
-- [ ] Initial setup and configuration
-- [ ] Device integration tutorials
-- [ ] Automation rules examples
-- [ ] MQTT setup and management
-- [ ] Node-RED integration
-- [ ] Custom components development
-- [ ] Dashboard creation
+### 📁 Storage
+- [ ] `storage/zfs-guide.md` - ZFS storage system guide
+- [ ] `storage/nas-setup.md` - Network Attached Storage basics
 
-## 💾 Backup Strategy Guide
-- [ ] 3-2-1 backup implementation
-- [ ] Automated backup scripts
-- [ ] Cloud sync with rclone
-- [ ] Backup verification procedures
-- [ ] Disaster recovery planning
-- [ ] Data integrity checking
-- [ ] Backup monitoring
+## Services
 
-## ⚡ Power Management Guide
-- [ ] UPS setup and configuration
-- [ ] Graceful shutdown procedures
-- [ ] Power monitoring tools
-- [ ] Wake-on-LAN setup
-- [ ] Power scheduling
-- [ ] Temperature monitoring
-- [ ] Energy efficiency tips
+### 📋 Monitoring
+- [ ] `monitoring/logging-guide.md` - Centralized logging guide
+- [ ] `monitoring/alerting-guide.md` - Alert configuration guide
+- [ ] `monitoring/metrics-guide.md` - Performance metrics guide
+
+### 🪐 Automation
+- [ ] `automation/ansible-guide.md` - Automation with Ansible
+- [ ] `automation/cicd-guide.md` - Pipeline setup and management
+- [ ] `automation/shell-scripting.md` - Advanced shell scripting
+- [ ] `automation/task-automation.md` - Cron and systemd timers
+
+## Applications
+
+### 🎥 Media
+- [ ] `media/plex-guide.md` - Plex Media Server setup
+- [ ] `media/jellyfin-guide.md` - Open-source media solution
+- [ ] `media/media-management.md` - Organization and automation
+- [ ] `media/hardware-transcoding.md` - GPU passthrough setup
+
+### 💻 Self-hosted Services
+- [ ] `self-hosted/nextcloud.md` - Personal cloud storage
+- [ ] `self-hosted/bitwarden.md` - Password management
+- [ ] `self-hosted/gitea.md` - Git server setup
+- [ ] `self-hosted/mail-server.md` - Email server configuration
+
+## Management
+
+### 💾 Backup
+- [ ] `backup/backup-strategy.md` - 3-2-1 backup implementation
+- [ ] `backup/cloud-backup.md` - Cloud storage integration
+- [ ] `backup/local-backup.md` - Local backup solutions
+- [ ] `backup/disaster-recovery.md` - Recovery procedures
+
+### 🔧 Maintenance
+- [ ] `maintenance/update-management.md` - System updates
+- [ ] `maintenance/health-checks.md` - System health monitoring
+- [ ] `maintenance/clean-up.md` - System cleanup procedures
+- [ ] `maintenance/performance-monitoring.md` - Resource tracking
+
+### 🔧 Troubleshooting
+- [ ] `troubleshooting/network-issues.md` - Network troubleshooting
+- [ ] `troubleshooting/system-problems.md` - System troubleshooting
+- [ ] `troubleshooting/service-issues.md` - Service debugging
+- [ ] `troubleshooting/performance-problems.md` - Performance analysis
+
+## Basic Skills
+
+### 💻 Setup
+- [ ] `setup/hardware.md` - Choosing the right hardware
+- [ ] `setup/network-planning.md` - Network architecture
+- [ ] `setup/os-installation.md` - Operating system setup
+- [ ] `setup/initial-security.md` - Basic security measures
+
+### 📖 Best Practices
+- [ ] `best-practices/security-guidelines.md` - Security best practices
+- [ ] `best-practices/performance-tuning.md` - Optimization guide
+- [ ] `best-practices/documentation.md` - Documentation standards
+- [ ] `best-practices/resource-management.md` - Resource allocation
 
 # Notes
-- Each guide should include practical examples
-- Focus on homelab-specific configurations
-- Include troubleshooting sections
-- Add relevant diagrams where needed
+- Each guide should follow the template in `templates/guide-template.md`
+- Include practical examples and commands
+- Add relevant screenshots and diagrams
+- Test all procedures in a lab environment
 - Keep security in mind for all guides
