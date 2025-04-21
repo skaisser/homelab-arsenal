@@ -75,6 +75,9 @@
 - [ ] `best-practices/documentation.md` - Documentation standards
 - [ ] `best-practices/resource-management.md` - Resource allocation
 
+### Create Documentation for Scripts Folder
+- [ ] `scripts/README.md` - Script documentation
+
 # Notes
 - Each guide should follow the template in `templates/guide-template.md`
 - Include practical examples and commands
