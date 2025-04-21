@@ -1,4 +1,4 @@
-# 🗄️ ZFS Storage Management Guide
+# 🗄️ ZFS Storage Management Guide #zfs #storage #filesystem #performance #snapshots
 
 Comprehensive guide for managing ZFS storage systems, focusing on TrueNAS Scale environments but applicable to any ZFS setup.
 

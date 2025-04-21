@@ -1,4 +1,4 @@
-# 📶 Network Speed Testing Guide
+# 📶 Network Speed Testing Guide #network #performance #iperf #troubleshooting
 
 Comprehensive guide for testing network performance in various scenarios using different tools.
 

@@ -9,7 +9,7 @@ Comprehensive guide for efficient file transfers across different systems and pr
 - [Performance Tips](#-performance-optimization)
 - [Troubleshooting](#-troubleshooting)
 
-## 📁 Rsync (Efficient File Sync)
+## 📁 Rsync (Efficient File Sync) #rsync
 
 ### Basic Remote Transfers
 ```bash

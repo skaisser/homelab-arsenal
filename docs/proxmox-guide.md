@@ -1,4 +1,4 @@
-# 🖥 Proxmox VE Administration Guide
+# 🖥 Proxmox VE Administration Guide #proxmox #virtualization #containers #storage #networking
 
 Comprehensive guide for managing Proxmox Virtual Environment (PVE), including VM management, storage, networking, and cluster operations.
 

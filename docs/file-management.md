@@ -1,4 +1,4 @@
-# 📁 File Management – Linux Commands
+# 📁 File Management – Linux Commands #files #tar #permissions #linux
 
 A comprehensive guide for managing files and directories in Linux systems. Organized by task type with practical examples and best practices.
 

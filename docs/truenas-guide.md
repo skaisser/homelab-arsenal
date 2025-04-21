@@ -1,13 +1,265 @@
-# 📈 TrueNAS Scale Job Management
+# 🗃️ TrueNAS SCALE Administration Guide #truenas #storage #kubernetes #docker #zfs
 
-Comprehensive guide for managing system jobs, tasks, and services in TrueNAS Scale.
+Comprehensive guide for managing TrueNAS SCALE, focusing on its unique features as a hyperconverged infrastructure solution.
 
 ## 📋 Table of Contents
-- [System Jobs](#-system-jobs)
-- [Service Management](#-service-management)
-- [Task Scheduling](#-task-scheduling)
-- [Job Monitoring](#-job-monitoring)
-- [Troubleshooting](#-troubleshooting)
+- [Storage Management](#storage-management)
+- [Apps and Containers](#apps-and-containers)
+- [Virtual Machines](#virtual-machines)
+- [Network Configuration](#network-configuration)
+- [System Management](#system-management)
+- [Backup Solutions](#backup-solutions)
+- [Troubleshooting](#troubleshooting)
+
+## 📁 Storage Management
+
+### ZFS Pool Operations
+```bash
+# List pools
+zpool list
+
+# Pool status and health
+zpool status pool_name
+
+# Import pool
+zpool import pool_name
+
+# Export pool
+zpool export pool_name
+```
+
+### Dataset Management
+```bash
+# Create dataset
+zfs create pool_name/dataset_name
+
+# Set compression
+zfs set compression=lz4 pool_name/dataset_name
+
+# Set quota
+zfs set quota=100G pool_name/dataset_name
+```
+
+### Snapshot Management
+```bash
+# Create snapshot
+zfs snapshot pool_name/dataset_name@snapshot_name
+
+# List snapshots
+zfs list -t snapshot
+
+# Roll back to snapshot
+zfs rollback pool_name/dataset_name@snapshot_name
+```
+
+## 🐳 Apps and Containers
+
+### Apps Management
+```bash
+# List running containers
+docker ps
+
+# List all containers (including stopped)
+docker ps -a
+
+# View container logs
+docker logs container_name
+
+# View container details
+docker inspect container_name
+```
+
+### Container Shell Access
+```bash
+# Access container shell
+docker exec -it container_name /bin/bash
+
+# Copy files to container
+docker cp /local/path container_name:/container/path
+
+# Copy files from container
+docker cp container_name:/container/path /local/path
+```
+
+### Docker Compose Operations
+```bash
+# Start services
+docker-compose up -d
+
+# Stop services
+docker-compose down
+
+# View service logs
+docker-compose logs -f service_name
+
+# Restart service
+docker-compose restart service_name
+```
+
+## 🖥 Virtual Machines
+
+### VM Operations
+```bash
+# List VMs
+virsh list --all
+
+# Start VM
+virsh start vm_name
+
+# Stop VM
+virsh shutdown vm_name
+
+# Force stop VM
+virsh destroy vm_name
+```
+
+### VM Management
+```bash
+# Edit VM configuration
+virsh edit vm_name
+
+# Show VM information
+virsh dominfo vm_name
+
+# Connect to VM console
+virsh console vm_name
+```
+
+## 📶 Network Configuration
+
+### Interface Management
+```bash
+# Show interfaces
+ip addr show
+
+# View network status
+nmcli device status
+
+# Configure interface
+nmcli connection modify eth0 ipv4.addresses "192.168.1.100/24"
+```
+
+### VLAN Configuration
+```bash
+# Create VLAN interface
+vconfig add eth0 100
+
+# Remove VLAN interface
+vconfig rem eth0.100
+```
+
+## ⚙️ System Management
+
+### Service Control
+```bash
+# List services
+systemctl list-units --type=service
+
+# Check service status
+systemctl status service_name
+
+# Restart service
+systemctl restart service_name
+```
+
+### System Updates
+```bash
+# Check update status
+apt update
+
+# List available updates
+apt list --upgradable
+
+# Apply updates
+apt upgrade
+```
+
+## 💾 Backup Solutions
+
+### Replication Tasks
+```bash
+# Create replication task
+zfs send pool_name/dataset_name@snapshot | zfs receive backup_pool/dataset_name
+
+# Incremental replication
+zfs send -i pool_name/dataset_name@snap1 pool_name/dataset_name@snap2 | zfs receive backup_pool/dataset_name
+```
+
+### Rsync Backup
+```bash
+# Backup with rsync
+rsync -avz /source/ user@remote:/destination/
+
+# Backup with progress
+rsync -avz --progress /source/ user@remote:/destination/
+```
+
+## 🔧 Troubleshooting
+
+### System Logs
+```bash
+# View system logs
+journalctl -xe
+
+# View service logs
+journalctl -u service_name
+
+# Monitor logs in real-time
+tail -f /var/log/messages
+```
+
+### ZFS Diagnostics
+```bash
+# Check pool health
+zpool status -v
+
+# Scrub pool
+zpool scrub pool_name
+
+# Clear pool errors
+zpool clear pool_name
+```
+
+### Network Diagnostics
+```bash
+# Test connectivity
+ping host
+
+# Check ports
+netstat -tuln
+
+# Trace route
+traceroute host
+```
+
+## 💡 Pro Tips
+
+1. **Performance Optimization**
+   - Use appropriate record sizes for datasets
+   - Enable compression where suitable
+   - Monitor ARC usage
+   - Use SSD for cache/log devices
+
+2. **Security Best Practices**
+   - Keep system updated
+   - Use strong passwords
+   - Implement network segmentation
+   - Regular security audits
+
+3. **Maintenance Schedule**
+   - Regular ZFS scrubs
+   - Snapshot management
+   - Log rotation
+   - Backup verification
+
+## 📘 Additional Resources
+
+- [TrueNAS SCALE Documentation](https://www.truenas.com/docs/scale/)
+- [TrueNAS Community](https://www.truenas.com/community/)
+- [ZFS Documentation](https://openzfs.github.io/openzfs-docs/)
+- [Kubernetes Documentation](https://kubernetes.io/docs/)
+
+> 💡 **Note**: Always test commands in a safe environment first and ensure you have proper backups before making system changes.
 
 ## 📊 System Jobs
 
