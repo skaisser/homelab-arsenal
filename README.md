@@ -1,20 +1,55 @@
-# 📓 Linux4Noobs
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="img/logo.png" width="400" alt="Linux4Noobs Logo"></a></p>
-  <p>Linux System Administration Guide</p>
+# 🏠 HomeLab Arsenal
+<p align="center"><a href="https://github.com/skaisser/homelab-arsenal" target="_blank"><img src="img/logo.png" width="400" alt="HomeLab Arsenal Logo"></a></p>
+<p align="center">Your Ultimate Guide to Building & Managing a Professional-Grade Home Lab</p>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
+Welcome to HomeLab Arsenal! This is your comprehensive guide to building and managing a professional-grade home lab environment. Whether you're setting up your first home server or expanding your existing infrastructure, our guides cover everything from basic Linux administration to advanced homelab architectures.
 
-Welcome to Linux4Noobs! A comprehensive collection of guides and tutorials for Linux system administration, designed to be beginner-friendly while providing advanced insights for experienced users.
+### 🎯 What's Inside
+
+#### 🛠️ Infrastructure
+- [Virtualization](docs/virtualization/) - Proxmox, VMware, KVM guides
+- [Containers](docs/containers/) - Docker, Kubernetes, LXC guides
+- [Storage](docs/storage/) - TrueNAS, ZFS, Storage management
+
+#### 🔧 Core Services
+- [Networking](docs/networking/) - VLANs, DNS, VPN, Proxies
+- [Monitoring](docs/monitoring/) - System metrics, logs, alerts
+- [Security](docs/security/) - SSH, firewalls, authentication
+- [Automation](docs/automation/) - Ansible, scripts, CI/CD
+
+#### 🎮 Applications
+- [Media](docs/media/) - Plex, Jellyfin, streaming
+- [Home Automation](docs/home-automation/) - Home Assistant, IoT
+- [Self-hosted](docs/self-hosted/) - Various self-hosted services
+
+#### 📖 Getting Started
+- [Basics](docs/basics/) - Linux fundamentals
+- [Setup](docs/setup/) - Initial configuration guides
+- [Best Practices](docs/best-practices/) - Guidelines and recommendations
+
+#### 🔧 Management
+- [Backup](docs/backup/) - Backup strategies and tools
+- [Maintenance](docs/maintenance/) - Regular tasks and updates
+- [Troubleshooting](docs/troubleshooting/) - Common issues and solutions
 
 ## 🏷️ Tags
 
-**Topics**: #linux #docker #containers #virtualization #storage #zfs #networking #performance #proxmox #truenas
+**Infrastructure**: #virtualization #containers #storage #proxmox #docker #kubernetes #zfs #truenas
+
+**Services**: #networking #monitoring #security #automation #ci-cd #dns #vpn #ssh
+
+**Applications**: #media #plex #jellyfin #home-assistant #iot #self-hosted
 
 **Skills**: #basics #tutorial #commands #reference #troubleshooting #devops
 
-**Tools**: #rsync #iperf #tar #compose
+**Management**: #backup #maintenance #monitoring #performance #security
+
+**Tools**: #ansible #rsync #iperf #tar #compose #git #prometheus #grafana
+
+> 💡 **Note**: Click any tag in Obsidian to see all related content. Tags are organized by category for better discovery.
 
 
 ## 📱 Quick Start with Obsidian
@@ -23,19 +58,84 @@ This documentation is optimized for [Obsidian](https://obsidian.md), a powerful 
 
 ➡️ [How to use this repo with Obsidian](OBSIDIAN_SETUP.md)
 
-## 📚 Table of Contents
+## 📚 Documentation Structure
 
 ### 🚀 Getting Started
-- [Getting Started Guide](docs/getting-started.md) - Essential Linux basics `beginner`
-  - Basic concepts
-  - Essential commands
-  - System navigation
-  - Troubleshooting basics
-- [Command Reference](docs/command-reference.md) - Quick command lookup `beginner`
-  - File operations
-  - System information
-  - Process management
-  - Network commands
+- [Linux Basics](docs/basics/) - Essential Linux knowledge `beginner`
+  - Command line essentials
+  - File system operations
+  - Package management
+  - Basic administration
+- [Initial Setup](docs/setup/) - First steps in your homelab `beginner`
+  - Hardware selection
+  - Network planning
+  - OS installation
+  - Security baseline
+- [Best Practices](docs/best-practices/) - Guidelines and standards `intermediate`
+  - Security guidelines
+  - Performance tuning
+  - Documentation methods
+  - Resource planning
+
+### 🛠️ Core Infrastructure
+- [Virtualization](docs/virtualization/) - Hypervisor setup `advanced`
+  - Proxmox VE
+  - KVM/QEMU
+  - VM management
+- [Containers](docs/containers/) - Container platforms `intermediate`
+  - Docker and Compose
+  - Kubernetes/K3s
+  - LXC containers
+- [Storage](docs/storage/) - Storage solutions `advanced`
+  - TrueNAS SCALE
+  - ZFS management
+  - NAS configuration
+
+### 🔧 Essential Services
+- [Networking](docs/networking/) - Network management `intermediate`
+  - DNS and DHCP
+  - VPN setup
+  - Reverse proxy
+- [Security](docs/security/) - Security hardening `intermediate`
+  - SSH management
+  - Firewall setup
+  - Access control
+- [Monitoring](docs/monitoring/) - System oversight `intermediate`
+  - Metrics collection
+  - Log management
+  - Alert configuration
+- [Automation](docs/automation/) - Task automation `advanced`
+  - Ansible playbooks
+  - CI/CD pipelines
+  - Shell scripting
+
+### 🎮 Applications
+- [Media Server](docs/media/) - Media management `intermediate`
+  - Plex/Jellyfin
+  - Hardware transcoding
+  - Library organization
+- [Home Automation](docs/home-automation/) - Smart home `intermediate`
+  - Home Assistant
+  - Node-RED
+  - IoT integration
+- [Self-hosted](docs/self-hosted/) - Personal services `intermediate`
+  - Cloud storage
+  - Git server
+  - Password manager
+
+### 🔧 Maintenance
+- [Backup](docs/backup/) - Data protection `intermediate`
+  - Backup strategies
+  - Cloud integration
+  - Recovery procedures
+- [Maintenance](docs/maintenance/) - System upkeep `intermediate`
+  - Update management
+  - Health monitoring
+  - Performance tuning
+- [Troubleshooting](docs/troubleshooting/) - Problem solving `advanced`
+  - Network issues
+  - System problems
+  - Performance analysis
 
 ### 🐳 Containerization
 - [Docker Guide](docs/docker-guide.md) - Comprehensive Docker management `intermediate`
@@ -61,60 +161,42 @@ This documentation is optimized for [Obsidian](https://obsidian.md), a powerful 
   - Cluster management
 
 ### 📶 Networking
-- [Network Testing Guide](docs/network-testing.md) - Network performance testing `intermediate`
-  - Speed testing tools
-  - Performance analysis
-  - Troubleshooting
 
-### 📁 File Operations
-- [File Management Guide](docs/file-management.md) - File system operations `beginner`
-  - Archive management
-  - File organization
-  - Permission management
-  - Batch operations
-- [File Transfer Guide](docs/file-transfer.md) - Data transfer methods `intermediate`
-  - Rclone cloud sync
-  - Rsync efficient transfers
-  - Secure copy protocol
-  - Performance optimization
+## 📖 Documentation Standards
 
-### 🗃️ Storage Management
-- [ZFS Storage Guide](docs/zfs-storage.md) - ZFS administration `advanced`
-  - Pool management
-  - Dataset operations
-  - Snapshot handling
-  - Performance tuning
-- [TrueNAS Guide](docs/truenas-guide.md) - TrueNAS Scale management `advanced`
-  - System jobs
-  - Service control
-  - Task scheduling
-  - Monitoring and logs
+- All guides follow our [template](templates/guide-template.md)
+- Use clear, concise language
+- Include practical examples
+- Add relevant tags
+- Maintain consistent formatting
 
-## 💪 Features
+## ❓ Getting Help
 
-- 📖 Clear, concise documentation
-- 👨‍💻 Beginner-friendly explanations
-- 🔧 Practical examples and use cases
-- 🔍 Troubleshooting guides
-- 💡 Best practices and tips
-- 🔄 Regular updates
+- Check the [Troubleshooting](docs/troubleshooting/) guide
+- Search existing [Issues](https://github.com/skaisser/homelab-arsenal/issues)
+- Join our [Discussions](https://github.com/skaisser/homelab-arsenal/discussions)
 
-## 📢 Contributing
+## 📌 License
 
-We love your input! We want to make contributing to Linux4Noobs as easy and transparent as possible. Check out our [Contributing Guide](CONTRIBUTING.md) to get started.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-### Ways to Contribute
-- Report bugs or documentation issues
-- Suggest new features or topics
-- Improve existing documentation
-- Add new guides or tutorials
-- Share your experience and tips
+## 💻 Contributing
+
+Contributions are welcome! Whether you're fixing bugs, adding new guides, or improving documentation:
+
+1. Fork the repository
+2. Create your feature branch
+3. Commit your changes
+4. Push to the branch
+5. Open a Pull Request
+
+Check out our [Contributing Guide](CONTRIBUTING.md) for detailed instructions.
 
 ## 👨‍💻 Getting Help
 
 - 📓 Check our [Documentation](docs/)
-- ❓ Open an [Issue](https://github.com/linux4noobs/linux4noobs/issues)
-- 💬 Join our [Discussions](https://github.com/linux4noobs/linux4noobs/discussions)
+- ❓ Open an [Issue](https://github.com/skaisser/homelab-arsenal/issues)
+- 💬 Join our [Discussions](https://github.com/skaisser/homelab-arsenal/discussions)
 
 ## 📜 License
 

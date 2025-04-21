@@ -1,6 +1,19 @@
-# 📚 Guide Title #tag1 #tag2 #tag3
+# 📚 Guide Title
+
+> **Choose relevant tags from:**
+> - Infrastructure: #virtualization #containers #storage #proxmox #docker #kubernetes #zfs #truenas
+> - Services: #networking #monitoring #security #automation #ci-cd #dns #vpn #ssh
+> - Applications: #media #plex #jellyfin #home-assistant #iot #self-hosted
+> - Skills: #basics #tutorial #commands #reference #troubleshooting #devops
+> - Management: #backup #maintenance #monitoring #performance #security
+> - Tools: #ansible #rsync #iperf #tar #compose #git #prometheus #grafana
+> Delete this section after choosing your tags.
 
 Brief description of what this guide covers and its main objectives.
+
+**Difficulty**: `beginner`|`intermediate`|`advanced` (choose one)
+**Time Required**: X minutes/hours
+**Last Updated**: YYYY-MM-DD
 
 ## 📋 Table of Contents
 - [Section 1](#section-1)
