@@ -110,6 +110,13 @@ zfs list -t snapshot -o name -s creation | head -n 5 | xargs -n 1 zfs destroy
 # Send full backup
 zfs send datapool/dataset1@snap1 | zfs receive backup/dataset1
 
+# FULL replication of the snapshot called “migrate”, this assumes youve created already a snapshot called migrate recursive.
+# (-R = include children & properties)
+# (pv is optional, just shows speed/progress)
+# (-F = roll back target if it exists)
+# (-d = strip the leading path so datasets land under pool "big")
+zfs send -R cache/immich@migrate | pv | zfs receive -vFd big
+
 # Send incremental backup
 zfs send -i datapool/dataset1@snap1 datapool/dataset1@snap2 | \
 zfs receive backup/dataset1
@@ -179,7 +186,7 @@ zfs list -t snapshot -o name,used,referenced
    ```bash
    # Check status
    zpool status -v
-   
+
    # Replace failed disk
    zpool replace datapool old_disk new_disk
    ```
@@ -188,7 +195,7 @@ zfs list -t snapshot -o name,used,referenced
    ```bash
    # Check fragmentation
    zpool list -v
-   
+
    # Monitor I/O
    zpool iostat -v 1
    ```
@@ -197,7 +204,7 @@ zfs list -t snapshot -o name,used,referenced
    ```bash
    # Find space hogs
    zfs list -o name,used,referenced -s used
-   
+
    # Clean old snapshots
    zfs list -t snapshot -o name,used -s used
    ```
